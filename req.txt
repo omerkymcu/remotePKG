@@ -1,0 +1,5 @@
+git clone https://github.com/kevinburke/sshpass.git
+cd sshpass
+./configure
+make
+sudo make install

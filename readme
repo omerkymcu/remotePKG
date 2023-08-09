@@ -1,0 +1,51 @@
+markdown
+Copy code
+# Remote Agent Installer for Mac
+
+This script allows you to remotely install an agent on Mac computers within a specified IP range. It provides a user-friendly interface to select a package (pkg) file and automates the installation process on multiple remote machines.
+
+## Prerequisites
+
+- Python 3.x
+- `sshpass` command-line utility (for password authentication)
+- Mac agent package (pkg) files placed in the 'pkg_folder' directory
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+   ```sh
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+Change to the project directory:
+
+sh
+Copy code
+cd RemoteAgentInstallerforMac
+Install the required Python packages (if not already installed):
+
+sh
+Copy code
+pip install ipaddress
+Install sshpass (if not already installed):
+
+sh
+Copy code
+brew tap linuxbrew/xorg
+brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+Usage
+Place your Mac agent package (pkg) files in the 'pkg_folder' directory.
+
+Open a terminal and navigate to the project directory.
+
+Run the script:
+
+sh
+Copy code
+python RemoteAgentInstallerforMac.py
+Follow the prompts to enter your credentials, IP range, and select the pkg file to install.
+
+Disclaimer
+This script is provided as-is and may have limitations. Use it at your own risk and ensure that you have proper authorization to perform remote installations.
+
+License
+This project is licensed under the MIT License.
